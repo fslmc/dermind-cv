@@ -1,0 +1,41 @@
+name: dermind-cv
+
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.10
+
+  # Scientific stack
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+
+  # CV + imaging
+  - opencv
+  - pillow
+  - matplotlib
+
+  # Notebook
+  - jupyterlab
+  - notebook
+  - ipykernel
+
+  # Utilities
+  - tqdm
+  - pyyaml
+  - requests
+  - psutil
+
+  # pip support
+  - pip
+
+  - pip:
+      - tensorflow==2.15.0
+      - tensorflow-addons
+      - albumentations
+      - imgaug
+      - kaggle
+      - wandb
